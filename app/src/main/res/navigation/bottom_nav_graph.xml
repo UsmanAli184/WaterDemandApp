@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/item_home">
+
+    <fragment
+        android:id="@+id/item_home"
+        android:name="com.example.waterdemandapp.ui.main.home.MainFragment"
+        android:label="MainFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/item_deals"
+        android:name="com.example.waterdemandapp.ui.main.history.HistoryFragment"
+        android:label="HistoryFragment" />
+    <fragment
+        android:id="@+id/item_orders"
+        android:name="com.example.waterdemandapp.ui.main.orders.OrdersFragment"
+        android:label="OrdersFragment" />
+</navigation>

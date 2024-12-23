@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginVertical="10dp"
+    android:padding="20dp">
+
+    <!-- WaterDemand Name -->
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- WaterDemand Price -->
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$9.99"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        app:layout_constraintStart_toStartOf="@id/user_name"
+        app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+    <!-- User Address -->
+    <TextView
+        android:id="@+id/user_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/total_price"
+        app:layout_constraintTop_toBottomOf="@id/total_price" />
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pending"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:background="@drawable/edit_text_background"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Place Order Button -->
+    <Button
+        android:id="@+id/place_order_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:backgroundTint="@color/holo_green_dark"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="@id/user_address"
+        app:layout_constraintTop_toBottomOf="@id/user_address"
+        android:layout_marginTop="16dp" />
+
+    <!-- Cancel Button -->
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:backgroundTint="@color/holo_red_dark"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@id/place_order_button"
+        app:layout_constraintTop_toTopOf="@id/place_order_button"
+        android:layout_marginStart="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

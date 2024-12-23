@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "388950830667",
+    "project_id": "water-demand-app",
+    "storage_bucket": "water-demand-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388950830667:android:3a78d299fd2b8609bea7ce",
+        "android_client_info": {
+          "package_name": "com.example.waterdemandapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8RIdHZw1cnbR_LXX5e_FPRMrkzSHpImU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
